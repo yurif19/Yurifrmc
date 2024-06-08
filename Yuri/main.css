@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-link {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.header span {
+  color: #f9004d;
+}
+
+.nav-link ul {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
+  letter-spacing: 3px;
+  transition: 0.6s;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  border-radius: 1rem;
+  padding: 5px 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+li a:hover {
+  background-color: #f9004d;
+  color: #fff;
+}
+
+.banner {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  z-index: -1;
+}
+
+.section {
+  padding-top: 20rem;
+  padding-left: 10rem;
+  display: flex;
+  position: relative;
+  gap: 5rem;
+}
+
+.intro {
+  right: 50%;
+}
+
+.intro h2 {
+  font-size: clamp(1rem, -0.625rem + 5.2vw, 2.3rem);
+  color: #fff;
+  position: relative;
+  top: -5rem;
+}
+
+.intro span {
+  color: #f9004d;
+  font-weight: bold;
+  font-size: clamp(1.5rem, 0.125rem + 4.4vw, 2.6rem);
+  letter-spacing: 0.2px;
+}
+
+.intro h4 {
+  color: #fff;
+  width: 30rem;
+  top: -4rem;
+  position: relative;
+  font-size: clamp(0.5rem, 0.1094rem + 1.25vw, 0.8125rem);
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro h1 {
+  width: 19ch;
+  animation: typing 2.5s steps(19), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 5px solid #fff;
+  color: rgb(97, 210, 230);
+  font-size: 3.2rem;
+  position: relative;
+  top: -5rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -22.2rem;
+  left: 1rem;
+  width: 5rem;
+}
+
+.links a {
+  font-size: clamp(1.25rem, 0rem + 4vw, 2.25rem);
+  padding-right: 10px;
+  padding: 2.57rem;
+}
+
+.links a:hover {
+  scale: 1.2;
+}
+
+.fa-facebook {
+  color: #f9004d;
+}
+
+.fa-github {
+  color: #f9004d;
+}
+
+.fa-envelope {
+  color: #f9004d;
+}
+
+.fa-instagram {
+  color: #f9004d;
+}

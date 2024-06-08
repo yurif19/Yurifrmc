@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+}
+
+.header h2 {
+  font-size: clamp(2rem, 2.625rem + -2vw, 1.5rem);
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.header span {
+  color: #f9004d;
+}
+
+.nav-link ul {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: clamp(0.625rem, 0rem + 2vw, 1.125rem);
+  letter-spacing: 3px;
+  transition: 0.6s;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  border-radius: 1rem;
+  padding: 5px 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li a:hover {
+  background-color: #f9004d;
+  color: #fff;
+}
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  z-index: -1;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 4em;
+  left: 0.3rem;
+  width: 5rem;
+}
+
+.contacts a {
+  font-size: 36px;
+  padding-right: 10px;
+  padding: 2.57rem;
+}
+
+.contacts a:hover {
+  scale: 1.2;
+}
+
+.fa-facebook {
+  color: #f9004d;
+}
+
+.fa-github {
+  color: #f9004d;
+}
+
+.fa-envelope {
+  color: #f9004d;
+}
+
+.fa-instagram {
+  color: #f9004d;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contact-form h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.contact-form label {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #f9004d;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e6003a;
+}

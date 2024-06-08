@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+}
+
+.header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.header span {
+  color: #f9004d;
+}
+
+.nav-link ul {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 3px;
+  transition: 0.6s;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  border-radius: 1rem;
+  padding: 5px 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+li a:hover {
+  background-color: #f9004d;
+  color: #fff;
+}
+
+.banner {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  z-index: -1;
+}
+
+.info {
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 8rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.gallery-item {
+  flex: 1 1 calc(25% - 2rem);
+  max-width: calc(25% - 2rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -7rem;
+  left: 0.3rem;
+  width: 5rem;
+}
+
+.contacts a {
+  font-size: 36px;
+  padding-right: 10px;
+  padding: 2.57rem;
+}
+
+.contacts a:hover {
+  scale: 1.2;
+}
+
+.fa-facebook,
+.fa-github,
+.fa-envelope,
+.fa-instagram {
+  color: #f9004d;
+}
